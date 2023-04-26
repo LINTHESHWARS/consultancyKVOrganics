@@ -1,0 +1,59 @@
+.image-slider {
+    position: relative;
+  }
+  
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slick-dots li {
+    margin: 0 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slick-dots li.slick-active {
+    background-color: #333;
+  }
+  
+  
+  .slider-container {
+    height: 400px; /* set a fixed height for the slider container */
+    display: flex;
+    align-items: center; /* center images vertically */
+    overflow: hidden; /* hide overflow of images outside the container */
+  }
+  
+  .slick-dots li button:before{
+    content: ' ';
+  }
+
+  .slider-container img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+  } 
+
+  .imageSlider{
+    height: 500px;
+    width: 700px;
+  }
+
+  .imageSlider img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
