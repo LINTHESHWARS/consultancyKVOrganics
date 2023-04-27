@@ -24,6 +24,7 @@
   }
   
   nav {
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,10 +34,11 @@
     display: none;
   }
   .navbar-links-container a {
-    margin-right: 3rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
     text-decoration: none;
     color: black;
-    font-size: 1.1rem;
+    font-size: 2rem;
     font-weight: 600;
   }
   .primary-button {
@@ -45,19 +47,21 @@
     outline: none;
     border: none;
     border-radius: 5rem;
-    font-size: 1.1rem;
+    font-size: 2rem;
     cursor: pointer;
     font-weight: 600;
     transition: 0.2s;
   }
   .navbar-cart-icon {
-    font-size: 1.15rem;
+    font-size: 3rem;
   }
   .primary-button:hover {
     background-color: rgb(234, 234, 234);
+    text-decoration: none;
   }
   .navbar-menu-container svg {
-    font-size: 1.5rem;
+    margin-top: 3rem;
+    font-size: 3rem;
     cursor: pointer;
   }
   .home-banner-container {
@@ -138,6 +142,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    font-size: 2rem;
   }
   .primary-subheading {
     font-weight: 700;
@@ -207,7 +212,7 @@
     margin-top: 2.5rem;
   }
   .footer-icons svg {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-right: 1.25rem;
     color: #585858;
   }
@@ -227,6 +232,7 @@
   .footer-section-columns span {
     margin: 0.25rem 0rem;
     font-weight: 600;
+    font-size: 1.5rem;
     color: #4c4c4c;
     cursor: pointer;
   }

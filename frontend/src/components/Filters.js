@@ -14,7 +14,7 @@ const Filters = () => {
     <div className="filters">
       <span className="title">Filter Products</span>
       <span>
-        <Form.Check
+        <Form.Check style={{fontSize:"1.5rem"}}
           inline
           label="Ascending"
           name="group1"
@@ -30,7 +30,7 @@ const Filters = () => {
         />
       </span>
       <span>
-        <Form.Check
+        <Form.Check style={{fontSize:"1.5rem"}}
           inline
           label="Descending"
           name="group1"
@@ -46,7 +46,7 @@ const Filters = () => {
         />
       </span>
       <span>
-        <Form.Check
+        <Form.Check style={{fontSize:"1.5rem"}}
           inline
           label="Include Out of Stock"
           name="group1"
@@ -61,7 +61,7 @@ const Filters = () => {
         />
       </span>
       <span>
-        <Form.Check
+        <Form.Check style={{fontSize:"1.5rem"}}
           inline
           label="Fast Delivery Only"
           name="group1"

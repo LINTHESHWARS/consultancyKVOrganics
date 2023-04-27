@@ -7,7 +7,7 @@ const Work = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "Pick Meals",
+      title: "Pick Healthy Products",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
     },
     {

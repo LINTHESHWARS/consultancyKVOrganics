@@ -1,6 +1,10 @@
 import React from 'react'
 import './Footer.css';
 import paymentProviderImage from '../images/paymentProviderImage.png' 
+import { FiArrowRight } from 'react-icons/fi';
+import { BsTwitter, BsYoutube } from 'react-icons/bs';
+import { SiLinkedin } from 'react-icons/si';
+import { FaFacebookF } from 'react-icons/fa';
 const Footer = () => {
   return (
     <div className='grid'>
@@ -12,22 +16,22 @@ const Footer = () => {
               <h2 >Karpaga vinayaga Dairy & Organic products</h2>
             </li>
             <li id='firstFooterComponent'>
-              <i className="fa-solid fa-location-dot"></i>
+              {/* <GoLocation/> */}
               <p style={{textTransform:"uppercase",margin:"1.2rem"}}>Kv complex, salem main road, muthukalipatti, rasipuram, namakkal, 637 401</p>
             </li>
             <li id='firstFooterComponent'>
-              <i className="fa-solid fa-phone-volume"></i>
+              {/* <i className="fa-solid fa-phone-volume"></i> */}
               <p style={{margin:"1.1rem"}}>+91 9042824939</p>
             </li>
             <li id='firstFooterComponent'>
-              <i className="fa-regular fa-envelope"></i>
+              {/* <i className="fa-regular fa-envelope"></i> */}
               <p style={{margin:"1.1rem"}}>Admin@gmail.com</p>
             </li>
             <li id='firstFooterComponent'>
-              <a href='# '><i style={{margin:"1.1rem"}} className="fa-brands fa-facebook-f"></i></a>
-              <a href='# '><i style={{margin:"1.1rem"}} className="fa-brands fa-square-twitter"></i></a>
-              <a href='# '><i style={{margin:"1.1rem"}} className="fa-brands fa-linkedin"></i></a>
-              <a href='# '><i style={{margin:"1.1rem"}} className="fa-brands fa-youtube"></i></a>
+              <a href='# ' style={{margin:"1.1rem"}}><FaFacebookF/></a>
+              <a href='# ' style={{margin:"1.1rem"}}><BsTwitter/></a>
+              <a href='# ' style={{margin:"1.1rem"}}><SiLinkedin/></a>
+              <a href='# ' style={{margin:"1.1rem"}}><BsYoutube/></a>
             </li>
           </ul>
         </div>
@@ -62,7 +66,7 @@ const Footer = () => {
               receive updates via email</p></li>
             <li className='newsletterEmail'>
               <input type='email' placeholder='Email*'></input>
-              <button><i className="fa-regular fa-paper-plane" style={{color:"#fff"}}></i></button>
+              <button style={{color:"#fff",fontSize:"2rem",display:"flex",alignItems:"center"}}><FiArrowRight/></button>
             </li>
             <li>
               <h3>We Accept</h3>
@@ -70,6 +74,7 @@ const Footer = () => {
             <li>
               <img src={paymentProviderImage} alt='banner' />
             </li>
+            
           </ul>
         </div>
       </div>
