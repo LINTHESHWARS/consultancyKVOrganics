@@ -14,8 +14,7 @@ const ContactAddressArea = () => {
       <Card.Body>
         <Card.Title>Email Address</Card.Title>
         <Card.Text >
-          info@gmail.com
-          organic@gmail.com
+          manikandanvpm.er@gmail.com
         </Card.Text>
         <Button variant="primary">Send Email</Button>
       </Card.Body>
@@ -40,7 +39,7 @@ const ContactAddressArea = () => {
       <Card.Body>
         <Card.Title>Office Address</Card.Title>
         <Card.Text >
-          Some quick example text to build card</Card.Text>
+        KV Complex, Salem main road, Muthukalipatti, Rasipuram, Namakkal, 637 401</Card.Text>
         <Button variant="primary">Visit</Button>
       </Card.Body>
     </Card>
