@@ -5,10 +5,11 @@ import ContactMessageArea from '../components/ContactMessageArea';
 import GoogleMap from '../components/GoogleMap';
 import Footer from '../components/Footer';
 import NavbarContact from '../components/NavbarContact'
+import './Contact.css';
 
 const Contact = () => {
   return (
-    <div>
+    <div className='contact'>
         <NavbarContact/>
         <BannerSlider/>
         <ContactAddressArea/>

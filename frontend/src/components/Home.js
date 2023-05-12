@@ -39,7 +39,7 @@ const Home = () => {
           getProducts();
           transformProducts();
       
-    },[dispatch,]);
+    },[dispatch]);
 
   const transformProducts = () => {
     console.log("products "+products);

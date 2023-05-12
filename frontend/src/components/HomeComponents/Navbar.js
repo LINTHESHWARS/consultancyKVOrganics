@@ -21,6 +21,10 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
+      text: "KVOrganics",
+      icon: <HomeIcon />,
+    },
+    {
       text: "Home",
       icon: <HomeIcon />,
     },
@@ -43,18 +47,20 @@ const Navbar = () => {
   ];
   return (
     <nav style={{backgroundColor:"transparent"}}>
+      {/* <div className="heading"><h1 style={{fontSize: "5rem", color: "green", textAlign:"center"}}>KV Organics</h1></div> */}
       {/* <div className="nav-logo-container">
         <img src={Logo} alt="" />
       </div> */}
-      <div className="navbar-links-container">
-        <a href="http://localhost:3000/">Home</a>
-        <a href="">About</a>
-        <a href="http://localhost:3000/product">Products</a>
-        <a href="http://localhost:3000/contact">Contact</a>
-        <a href="">
+      <div className="navbar-links-container" >
+        <a href="" style={{textDecoration:"none",paddingRight:"2rem",fontSize: "5rem", color: "green"}}>KV Organics</a>
+        <a href="http://localhost:3000/" style={{textDecoration:"none",paddingRight:"2rem"}}>Home</a>
+        {/* <a href="">About</a> */}
+        <a href="http://localhost:3000/product" style={{textDecoration:"none",paddingRight:"2rem"}}>Products</a>
+        <a href="http://localhost:3000/contact" style={{textDecoration:"none",paddingRight:"2rem"}}>Contact</a>
+        <a href="http://localhost:3000/product">
           <BsCart2 className="navbar-cart-icon" />
         </a>
-        <button className="primary-button">Bookings Now</button>
+        {/* <button className="primary-button">Bookings Now</button> */}
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

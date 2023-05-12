@@ -5,8 +5,7 @@ import Home from "./components/Home";
 import Cart from "./components/Cart";
 import LandingPage from "./components/LandingPage";
 import Contact from "./components/Contact";
-// import Contact from "./components/Contact";
-
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -36,6 +35,9 @@ function App() {
           <Contact />
         </Route>
 
+        <Route path="/blog" exact>
+          <Blog/>
+        </Route>
         
       </div>
     </BrowserRouter>

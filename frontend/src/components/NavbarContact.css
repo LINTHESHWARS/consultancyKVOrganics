@@ -24,6 +24,7 @@ nav {
   
   nav a:hover {
     color: #ccc;
+    text-decoration: none;
   }
 
   nav img{

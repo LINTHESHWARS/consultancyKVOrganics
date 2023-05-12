@@ -1,0 +1,29 @@
+.home-text-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#order{
+    margin:0 2rem 0 20rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #order{
+        margin:0;
+    }
+  }
+  
+
+
+.primary-subheading{
+    font-size: 3rem;
+}
+
+.about-section-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

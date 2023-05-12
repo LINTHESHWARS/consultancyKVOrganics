@@ -31,6 +31,7 @@
   
   
   .slider-container {
+    
     height: 400px; /* set a fixed height for the slider container */
     display: flex;
     align-items: center; /* center images vertically */
@@ -44,16 +45,16 @@
   .slider-container img {
     width: 100%; 
     height: 100%;
-    object-fit: cover;
   } 
 
   .imageSlider{
     height: 500px;
-    width: 700px;
+    width: 1200px;
   }
 
   .imageSlider img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    
   }

@@ -5,16 +5,16 @@ import Rating from "./Rating";
 const Filters = () => {
   const {
     productDispatch,
-    productState: { byStock, byFastDelivery, sort, byRating },
+    productState: { byStock, sort, byRating },
   } = CartState();
 
   // make state for rating
 
   return (
-    <div className="filters">
-      <span className="title">Filter Products</span>
-      <span>
-        <Form.Check style={{fontSize:"1.5rem"}}
+    <div className="filters" >
+      <span className="title" style={{textAlign:"center",fontSize:"2.8rem"}}>Filter Products</span>
+      <span style={{fontSize:"1.5rem"}}>
+        <Form.Check 
           inline
           label="Ascending"
           name="group1"
@@ -29,8 +29,8 @@ const Filters = () => {
           checked={sort === "lowToHigh" ? true : false}
         />
       </span>
-      <span>
-        <Form.Check style={{fontSize:"1.5rem"}}
+      <span style={{fontSize:"1.5rem"}}>
+        <Form.Check 
           inline
           label="Descending"
           name="group1"
@@ -45,8 +45,8 @@ const Filters = () => {
           checked={sort === "highToLow" ? true : false}
         />
       </span>
-      <span>
-        <Form.Check style={{fontSize:"1.5rem"}}
+      <span style={{fontSize:"1.5rem"}}>
+        <Form.Check 
           inline
           label="Include Out of Stock"
           name="group1"
@@ -60,7 +60,7 @@ const Filters = () => {
           checked={byStock}
         />
       </span>
-      <span>
+      {/* <span>
         <Form.Check style={{fontSize:"1.5rem"}}
           inline
           label="Fast Delivery Only"
@@ -74,7 +74,7 @@ const Filters = () => {
           }
           checked={byFastDelivery}
         />
-      </span>
+      </span> */}
       <span>
         <label style={{ paddingRight: 10 }}>Rating: </label>
         <Rating
@@ -88,7 +88,7 @@ const Filters = () => {
           style={{ cursor: "pointer" }}
         />
       </span>
-      <Button
+      <Button style={{fontSize:"2rem"}}
         variant="light"
         onClick={() =>
           productDispatch({

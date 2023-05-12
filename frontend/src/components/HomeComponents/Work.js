@@ -2,6 +2,7 @@ import React from "react";
 import PickMeals from "../../Assets/pick-meals-image.png";
 import ChooseMeals from "../../Assets/choose-image.png";
 import DeliveryMeals from "../../Assets/delivery-image.png";
+import './Home.css';
 
 const Work = () => {
   const workInfoData = [
@@ -24,11 +25,10 @@ const Work = () => {
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Work</p>
-        <h1 className="primary-heading">How It Works</h1>
-        <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+        <p className="primary-subheading" style={{fontSize:"3rem"}}>Work</p>
+        <h1 className="primary-heading" style={{fontSize:"5rem"}}>How It Works</h1>
+        <p className="primary-text" style={{fontSize:"2rem"}}>
+        Organic food products are often perceived to be healthier than non-organic food products as they are free from harmful chemical residues, synthetic pesticides, and hormones. They may also contain higher levels of nutrients, such as vitamins, antioxidants, and minerals.
         </p>
       </div>
       <div className="work-section-bottom">

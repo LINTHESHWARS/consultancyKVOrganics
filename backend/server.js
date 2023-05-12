@@ -31,7 +31,6 @@ app.use("/user",userRouter);
 app.use("/admin/add",AdminRouter);
 app.use("/get",GetDetailRouter);
 
-
 app.listen(5000, () => {
   console.log("Server is running at port 5000");
 });

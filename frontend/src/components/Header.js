@@ -21,15 +21,15 @@ const Header = () => {
   } = CartState();
 
   return (
-    <Navbar bg="dark" variant="dark" style={{ height: 80 }}>
+    <Navbar bg="dark" variant="dark" style={{ height: 60 }}>
       <Container>
-        <Navbar.Brand>
-          <Link to="/">Shopping Cart</Link>
+        <Navbar.Brand style={{textDecoration:"none"}}>
+          <a href="http://localhost:3000/home" style={{fontSize:"2.5rem",textDecoration:"none"}}>KV Organics</a>
         </Navbar.Brand>
         {useLocation().pathname.split("/")[1] !== "cart" && (
-          <Navbar.Text className="search">
+          <Navbar.Text className="search" style={{fontSize:"4rem"}}>
             <FormControl
-              style={{ width: 500 }}
+              style={{ width: 500,height:40 }}
               type="search"
               placeholder="Search a product..."
               className="m-auto"
@@ -47,20 +47,20 @@ const Header = () => {
           <Dropdown alignRight>
             <Dropdown.Toggle variant="success">
               <FaShoppingCart color="white" fontSize="25px" />
-              <Badge>{cart.length}</Badge>
+              <Badge style={{fontSize:"1.3rem",textAlign:"center",marginTop:"2px"}}>{cart.length}</Badge>
             </Dropdown.Toggle>
 
             <Dropdown.Menu style={{ minWidth: 370 }}>
               {cart.length > 0 ? (
                 <>
                   {cart.map((prod) => (
-                    <span className="cartitem" key={prod._id}>
+                    <span className="cartitem" style={{fontSize:"1.4rem"}} key={prod._id}>
                       <img
                         src={prod.image}
                         className="cartItemImg"
                         alt={prod.name}
                       />
-                      <div className="cartItemDetail">
+                      <div className="cartItemDetail" style={{fontSize:"1.4rem"}}>
                         <span>{prod.name}</span>
                         <span>₹ {prod.price}</span>
                       </div>
@@ -83,7 +83,7 @@ const Header = () => {
                   </Link>
                 </>
               ) : (
-                <span style={{ padding: 10 }}>Cart is Empty!</span>
+                <span style={{ padding: 10 ,fontSize:"1.2rem"}}>Cart is Empty!</span>
               )}
             </Dropdown.Menu>
           </Dropdown>
